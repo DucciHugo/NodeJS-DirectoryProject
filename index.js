@@ -1,5 +1,3 @@
-const { table, Console } = require('console');
-
 const readline = require('readline').createInterface({ 
     input: process.stdin,
     output: process.stdout
@@ -23,7 +21,7 @@ const ask = () => {
             case "/stop":
                 console.log("Closing the application.")
                 readline.close()
-                break;
+                process.exit();
             case "/add":
                 const con = {...contact}
                 con.id=listOfContacts.length+1;
