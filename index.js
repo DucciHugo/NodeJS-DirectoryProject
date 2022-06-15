@@ -64,6 +64,7 @@ const addNumber= (con) => {
     readline.question(`What is the phone number of ${con.firstName} ${con.lastName}`, (number)  => {
     con.number=number;
     listOfContacts.push(con)
+    console.log(`Your contact ${con.firstName} ${con.lastName} have been added succesfully to the directory !`)
     ask();
 })}
 
